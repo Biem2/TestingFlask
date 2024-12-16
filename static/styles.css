@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Stack content vertically */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px; /* Increased space between h1 and form */
+}
+
+form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 25px;
+    border-radius: 8px; /* Simple rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 320px;
+    margin-top: 0; /* Remove margin-top as it's already handled by h1 margin-bottom */
+}
+
+label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 18px 0;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9; /* Light input background */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #4CAF50; /* Green focus border */
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+input[type="submit"]:disabled {
+    background-color: #cccccc; /* Disabled button color */
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%; /* Form adapts to smaller screens */
+    }
+}
